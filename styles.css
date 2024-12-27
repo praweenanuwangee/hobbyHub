@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eeeef8;
+}
+h1 {
+    color: #130494;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p {color: #333;
+}
+
+header {
+    background-image: url('images/HOBBY\ HUB.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Increase the height */
+    padding: 20px; /* Optional: Add padding for internal spacing */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center-align the text */
+  }
+  
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0d0d71;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+h2{
+    color:darkblue;
+}
+
+.gallery img {
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.animation {
+    margin: 20px auto;
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+footer {
+    text-align: center;
+    background-color: #0d0d71;
+    color: white;
+    padding: 10px 0;
+   
+}
+
+.slideshow-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+    display: none;
+    width: 300px;
+    height: 700px;
+}
+
+.slideshow-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dots span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dots .active {
+    background-color: #1b2b88;
+}
+
+button {
+background-color: #5b4caf; /* Green background */
+color: rgb(241, 241, 243); /* White text */
+padding: 15px 30px; /* Button padding */
+border: none; /* Remove borders */
+border-radius: 8px; /* Rounded corners */
+font-size: 18px; /* Font size */
+cursor: pointer; /* Pointer cursor on hover */
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow */
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+.button:hover {
+background-color: #45a049; /* Darker green */
+transform: scale(1.05); /* Slightly larger */
+}
+
+/* Button Container */
+.button-container {
+text-align: center;
+width: 100%;
+height: 100%;
+}
+.foot{
+    color: aliceblue;
+}
+a{
+    color: aliceblue;
+}
+@media (max-width: 768px) {
+    .gallery img {
+        width: 150px;
+        height: 100px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0d0d71;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        header {
+            background-color: #0000;
+            color: #fff;
+           
+            text-align: center;
+        }
+        header h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #1c2466;
+            font-size: 30px;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .hobby-category {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0000;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .hobby-category1 h2 { color: #021ff8; }
+        .hobby-category2 h2 { color: #f70f0f; }
+        .hobby-category3 h2 { color: #067136; }
+        .hobby-category4 h2 { color: #5408d8; }
+        .hobby-category5 h2 { color: #f707c3; }
+
+        .hobby-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .hobby-list li {
+            margin: 10px 0;
+        }
+        .hobby-list a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hobby-list a:hover {
+            color: #242beb;
+        }
+        .hobby-image {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 21px 0 20px 0;
+            padding: 10px 20px;
+            background-color: #5b4caf;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            width: 100px;
+        }
+        .back-button:hover {
+            background-color: #333;
+        }
+        .back-button span {
+            font-size: 18px;
+            margin-right: 8px;
+        }
+        .next-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 21px 0 20px 0;
+    padding: 10px 20px;
+    background-color: #5b4caf;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100px;
+    float: right; /* Align to the right side */
+}
+.next-button:hover {
+    background-color: #333;
+}
+.next-button span {
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+    </style>
+</head>
+<body>
+<div>
+    <nav>
+        <a href="description.html">Hobbies</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="aboutus.html">More</a>
+        
+    </nav>
+</div>
+<header>
+    <h2>𝑬𝒙𝒑𝒍𝒐𝒓𝒆 𝒗𝒂𝒓𝒊𝒐𝒖𝒔 𝒉𝒐𝒃𝒃𝒊𝒆𝒔 𝒂𝒏𝒅 𝒃𝒐𝒐𝒔𝒕 𝒚𝒐𝒖𝒓 𝒎𝒆𝒏𝒕𝒂𝒍 𝒂𝒏𝒅 𝒑𝒉𝒚𝒔𝒊𝒄𝒂𝒍 𝒉𝒆𝒂𝒍𝒕𝒉</h2>
+</header>
+
+<div class="container">
+    <a href="javascript:history.back()" class="back-button">
+        <span>&larr;</span>
+    </a>
+    <a href="aboutus.html" class="next-button">
+        <span>Next &rarr;</span>
+    </a>
+    
+
+    <div class="hobby-category hobby-category1">
+        <div>
+            <h2>Creative Hobbies</h2>
+            <ul class="hobby-list">
+                <li><a href="painting.html">Painting and drawing</a></li>
+                <li><a href="writting.html">Writing</a></li>
+                <li><a href="crafting.html">Crafting</a></li>
+            </ul>
+        </div>
+        <img src="images/download (1).jpeg" alt="Creative hobbies" class="hobby-image">
+    </div>
+
+    <div class="hobby-category hobby-category2">
+        <div>
+            <h2>Physical Hobbies</h2>
+            <ul class="hobby-list">
+                <li><a href="cycling.html">Cycling</a></li>
+                <li><a href="yoga.html">Yoga</a></li>
+                <li><a href="hiking.html">Hiking</a></li>
+            </ul>
+        </div>
+        <img src="images/download (3).jpeg" alt="Physical hobbies" class="hobby-image">
+    </div>
+
+    <div class="hobby-category hobby-category3">
+        <div>
+            <h2>Mindful Hobbies</h2>
+            <ul class="hobby-list">
+                <li><a href="meditation.html">Meditation</a></li>
+                <li><a href="gardening.html">Gardening</a></li>
+                <li><a href="birdwatching.html">Birdwatching</a></li>
+            </ul>
+        </div>
+        <img src="images/images.jpeg" alt="Mindful hobbies" class="hobby-image">
+    </div>
+
+    <div class="hobby-category hobby-category4">
+        <div>
+            <h2>Technical Hobbies</h2>
+            <ul class="hobby-list">
+                <li><a href="coding.html">Coding</a></li>
+                <li><a href="gaming.html">Gaming</a></li>
+                <li><a href="photo.html">Photography</a></li>
+            </ul>
+        </div>
+        <img src="images/download (4).jpeg" alt="Technical hobbies" class="hobby-image">
+    </div>
+
+    <div class="hobby-category hobby-category5">
+        <div>
+            <h2>Social Hobbies</h2>
+            <ul class="hobby-list">
+                <li><a href="volunteering.html">Volunteering</a></li>
+                <li><a href="dancing.html">Dancing</a></li>
+                <li><a href="travelling.html">Traveling</a></li>
+            </ul>
+        </div>
+        <img src="images/download (5).jpeg" alt="Social hobbies" class="hobby-image">
+    </div>
+</div>
+</body>
+</html>

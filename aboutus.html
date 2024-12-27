@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c28a7;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="radio"],
+        input[type="range"] {
+            margin-right: 10px;
+        }
+        .radio-group, .rating-group {
+            display: flex;
+            gap: 10px;
+        }
+        .submit-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3013ae;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .submit-btn:hover {
+            background-color: #216b88;
+        }
+        .success-message {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #2839a7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Feedback</h1>
+    <form id="feedbackForm">
+        <!-- Knowledge Question -->
+        <div>
+            <label>Did you gain knowledge about the hobby you were interested in?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="knowledge" value="Yes" required> Yes</label>
+                <label><input type="radio" name="knowledge" value="No"> No</label>
+            </div>
+        </div>
+        
+        <!-- Hobby Selection Question -->
+        <div>
+            <label>Did you choose a hobby using this website?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="hobby" value="Yes" required> Yes</label>
+                <label><input type="radio" name="hobby" value="No"> No</label>
+            </div>
+        </div>
+        
+        <!-- Rating Section -->
+        <div>
+            <label>Rate your experience with the website (1 - Poor, 5 - Excellent):</label>
+            <div class="rating-group">
+                <input type="range" name="rating" min="1" max="5" value="3" step="1" id="rating">
+                <span id="ratingValue">3</span>
+            </div>
+        </div>
+        
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Submit Feedback</button>
+    </form>
+    <div class="success-message" id="successMessage">
+        Thank you for your feedback!
+    </div>
+</div>
+
+<script>
+    const ratingInput = document.getElementById('rating');
+    const ratingValue = document.getElementById('ratingValue');
+    const feedbackForm = document.getElementById('feedbackForm');
+    const successMessage = document.getElementById('successMessage');
+
+    // Update the rating value display
+    ratingInput.addEventListener('input', () => {
+        ratingValue.textContent = ratingInput.value;
+    });
+
+    // Show a success message after form submission
+    feedbackForm.addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent form from reloading the page
+        successMessage.style.display = 'block';
+    });
+</script>
+
+</body>
+</html>
